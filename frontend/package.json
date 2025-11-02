@@ -24,15 +24,16 @@
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "redux-saga": "^1.4.2",
+    "reselect": "^5.1.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test"
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -56,6 +57,7 @@
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
+    "react-app-rewired": "^2.2.1",
     "tailwindcss": "^3.4.18"
   }
 }
