@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +14,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src", 
+    "paths": {
+      "@apps/*": ["apps/*"],
+      "@common/*": ["libs/common/src/lib/*"],
+      "@features/*": ["libs/features/src/lib/*"],
+      "@utils/*": ["libs/utils/src/lib/*"],
+      "@store/*": ["apps/goibibo/src/store/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
